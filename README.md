@@ -12,10 +12,10 @@ An industrial-grade, self-sustaining weather station built on the ESP32 platform
 
 * **Group Number:**
 * **Team Members:**
-* Sarathi Jayasekara
-* Ravindu Weerakoon
-* Yuvindu Dassanayaka
-* Dhupika Bandara
+   * Sarathi Jayasekara
+   * Ravindu Weerakoon
+   * Yuvindu Dassanayaka
+   * Dhupika Bandara
 
 
 
@@ -64,68 +64,6 @@ Instead of continuous polling, the firmware executes an optimized cycle:
 * [ ] **Phase III: Networking Failover** – Develop software logic to seamlessly switch between Wi-Fi (primary) and GSM (backup).
 * [ ] **Phase IV: Data Visualization** – Deploy the FastAPI backend and connect a dashboard (e.g., Grafana) for real-time monitoring.
 
----
-
-## 🛠️ Repository Structure
-
-```text
-├── firmware/              # ESP32 Source Code (C++/Arduino/ESP-IDF)
-│   ├── src/               # Core logic (Sensors, Power Management, Network)
-│   └── lib/               # Hardware and sensor libraries
-├── backend/               # FastAPI Application
-│   ├── app/               # Main application logic & API routes
-│   ├── database/          # TimescaleDB migrations and schemas
-│   └── requirements.txt   # Python dependencies
-├── hardware/              # Schematic and PCB layout files
-└── README.md              # Project documentation
-
-```
-
----
-
-## ⚡ Quick Start (Development)
-
-### Prerequisites
-
-* **Hardware:** ESP32 Development Board, BME280, BH1750, 18650 Battery, Solar Panel.
-* **Software:** VS Code + PlatformIO (or Arduino IDE), Python 3.10+, Docker (for TimescaleDB).
-
-### Backend Setup
-
-1. Clone the repository and navigate to the backend directory:
-```bash
-git clone https://github.com/[your-repository].git
-cd backend
-
-```
 
 
 
-```
-2. Install dependencies:
-   ```bash
-pip install -r requirements.txt
-
-```
-
-3. Run the development server:
-```bash
-
-```
-
-
-
-uvicorn app.main:app --reload
-
-```
-
-### Firmware Setup
-1. Open the `firmware/` folder in **PlatformIO**.
-2. Configure your WiFi credentials and backend API URL in `config.h`.
-3. Build and upload the code to your ESP32.
-
-***
-
-Would you like me to add specific configuration scripts, license templates, or expand the hardware schematics section for this README?
-
-```
